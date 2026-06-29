@@ -1,0 +1,10 @@
+use store;
+select * from december_orders;
+select * from december_orders
+where category = 'electronics' 
+limit 50;
+
+-- Questions_Practice
+-- 1) Show only the first 10 records.
+select * from december_orders
+limit 10;
