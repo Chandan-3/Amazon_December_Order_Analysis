@@ -86,4 +86,23 @@ ORDER BY `Amount` DESC
 -- 9. Sort orders by latest date.
 -- Write a query to show the newest orders first.
 
+select * from december_orders
+order by `order_date` desc;
 
+-- 10. Find all orders from year 2025.
+-- Write a query to filter orders from 2025 only.
+
+select * from december_orders
+where `year` = 2025;
+
+-- Filtering Questions
+-- 11. Find orders from the Electronics category.
+
+select * from december_orders
+where category = 'Electronics';
+
+-- 12. Find orders from either Electronics or Fashion category.
+-- Use IN.
+
+select * from december_orders
+where category in ('Electronics', 'Fashion');
