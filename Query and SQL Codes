@@ -106,3 +106,9 @@ where category = 'Electronics';
 
 select * from december_orders
 where category in ('Electronics', 'Fashion');
+
+-- 13. Find orders where amount is between 50 and 200.
+-- Use BETWEEN.
+select * from december_orders
+where amount between 50 and 200 
+limit 10 ;
